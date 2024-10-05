@@ -6,6 +6,15 @@
 .full-body {
     margin: 20px;
 }
+a{
+    text-decoration: none;
+    color: #474747;
+    font-weight: bolder;
+}
+a:hover{
+    color: #fd6e0a;
+}
+
 
 .text-primary {
     color: #00ff00;
@@ -28,6 +37,7 @@
     padding: 18px 35px;
     border-radius: 5px;
     background: #fd6e0a;
+    text-wrap: nowrap;
 }
 
 .btn-contact {
@@ -39,6 +49,7 @@
     border: 1px solid #fd6e0a;
     padding: 18px 35px;
     border-radius: 5px;
+    text-wrap: nowrap;
 }
 
 .top-btn {
@@ -66,16 +77,17 @@ nav {
     justify-content: space-between;
     padding: 50px 200px;
 }
+nav ul {
+    display: flex;
+    align-items: center;
+}
 
 nav li {
     list-style: none;
     margin-left: 50px;
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-}
+
 
 .nav-title {
     font-weight: 900;
