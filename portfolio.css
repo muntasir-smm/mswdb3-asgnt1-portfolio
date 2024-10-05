@@ -44,6 +44,7 @@
 .top-btn {
     display: flex;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 /* Header and navigation styles */
@@ -83,9 +84,9 @@ nav ul {
 
 /* Banner style */
 .banner {
-    margin: 0px 200px;
+    margin:0 200px;
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 .banner-title {
@@ -136,6 +137,7 @@ section {
     color: #757575;
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .about-info-container {
@@ -157,16 +159,19 @@ section {
 /* What I Do styles */
 .skills-container {
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
+    gap:20px ;
+    
 }
 
 .skill {
     background: #ffffff;
     /* box-shadow: 60px -16px teal;  */
     /* Box shadow offset-x 60px offset-y -16px blur 0px */
-    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
     padding: 30px;
+    width: calc(25% - 20px);
 }
 
 .skill-title {
@@ -183,8 +188,9 @@ section {
 
 /* Resume Styles */
 .resume-content {
-    display: flex;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .resume .title {
@@ -221,10 +227,11 @@ section {
     margin-top: 50px;
     text-align: center;
 }
-
-.exprience {
-    /* visibility: hidden; */
-    display: none;
+.education, .experience{
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    gap: 20px;
 }
 
 /* Contact Style  */
@@ -264,16 +271,37 @@ input {
         background-image: none;
     }
      */
-    nav,
-    nav ul,
-    .banner,
-    .skills-container,
+    
+    nav, .banner,
     .resume-content,
     .about-info-container,
     .contact {
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
+    }
+    
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: end;
+    }
+        .section-description {
+            text-align: justify;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skill{
+        width: auto;
+    }
+    .resume-content {
+        display:flex;
+        flex-direction: column;
     }
 
     .about,
@@ -324,14 +352,27 @@ input {
         gap: 20px;
     }
 
+        
+
     .skills-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        /* Two columns for medium devices */
+        gap: 20px;
+        
+        
+    }
+
+    .skill{
+        width: auto;
+    }
+    .resume-content {
+        display: flex;
+        flex-direction: column;
     }
 
     .about,
-    .contact,
-    .resume-content {
+    .contact {
         padding: 20px;
     }
 
